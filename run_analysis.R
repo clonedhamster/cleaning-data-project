@@ -78,4 +78,4 @@ tidyDataSet <- function(data) {
 
 cleanedData <- readAndFilter()
 write.table(cleanedData, "merged_clean_data.txt")
-write.table(tidyDataSet, "tidy_set.txt")
+write.table(tidyDataSet(cleanedData), "tidy_set.txt")
